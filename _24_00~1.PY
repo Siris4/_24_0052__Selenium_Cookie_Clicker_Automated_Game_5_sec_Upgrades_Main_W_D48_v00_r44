@@ -66,7 +66,7 @@ def try_clicking_upgrades_periodically(driver):
                     print(f"Upgrade: {product_id} is not available.")
             except Exception as e:
                 print(f"Error accessing {product_id}: {str(e)}")
-        time.sleep(5)  # waits for 2 seconds before attempting upgrades again
+        time.sleep(5)  # waits for 5 seconds before attempting upgrades again
 
 driver = setup_chrome_driver_for_selenium()
 select_language(driver)
